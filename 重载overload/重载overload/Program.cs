@@ -15,10 +15,28 @@ namespace 重载overload
         /// <param name="args"></param>
         static void Main(string[] args)
         {
-            Console.WriteLine(123);
-            Console.WriteLine("string");
-            Console.WriteLine('c');
-            Console.WriteLine(123.456);
+            //Console.WriteLine(123);
+            //Console.WriteLine("string");
+            //Console.WriteLine('c');
+            //Console.WriteLine(123.456);
+
+            People p1 = new People();
+            p1.Name = "Tom";
+            p1.Age = 30;
+            p1.XueXi();
+            p1.XueXi("Tom1");
+            p1.XueXi("Tom1", 18);
+            Console.WriteLine($"{p1.Name} was {p1.Age} years old.");
+            Console.WriteLine("---------------");
+
+            People p2 = new People("Jake", 20);
+            Console.WriteLine("---------------");
+            p2.XueXi();
+            p2.XueXi("Tom1");
+            p2.XueXi("Tom1", 18);
+
+
+
         }
     }
 }
