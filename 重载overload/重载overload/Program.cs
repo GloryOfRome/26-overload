@@ -34,9 +34,7 @@ namespace 重载overload
             p2.XueXi();
             p2.XueXi("Tom1");
             p2.XueXi("Tom1", 18);
-
-
-
+            
         }
     }
 }
